@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOMEPAGE</title>
+	<!-- ελληνικά--> <meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<!-- css -->
+<style type="text/css">
+		
+		html {
+  			font-size: calc(0.6em + 1vw);
+				}
+
+		.panel{
+			font-size: 1rem;
+			border-radius: 0.3em;
+  			overflow: hidden;
+		}
+
+		body{
+			background-image: url(back.gif);
+			background-size: 66em 35em;
+     		margin: 0;
+ 			padding: 0;
+			}
+		
+		.panel-heading{
+			padding:0,6em 1.2em;
+			color: white;
+			text-shadow:
+   			-1px -1px 0 #000,
+    		1px -1px 0 #000,
+    		-1px 1px 0 #000,
+    		1px 1px 0 #000;  
+		}
+		.icons{
+			padding: -0.1em;
+		}
+		img.fb{
+			height: 4.5em;
+  			width:  4.5em;
+  			top: 5em;
+  			left: 3em;
+  			position: absolute;
+		}
+		.caption{
+			color: yellow;
+			top: 9.3em ;
+			left: 3.4em;
+			position: absolute;
+			size: 50px;
+		}
+		img.youtube{
+			height: 4.5em;
+  			width:  4.5em;
+  			top: 5em;
+  			left: 14em;
+  			position: absolute;
+		}
+		.caption2{
+			color: yellow;
+			top: 9.3em;
+			left: 14.6em;
+			position: absolute;
+			size: 50px;
+		}
+		img.netflix{
+			height: 4.5em;
+  			width:  4.5em;
+  			top: 5em;
+  			left: 25em;
+  			position: absolute;
+		}
+		.caption3{
+			color:yellow;
+			top: 9.3em;
+			left: 25.7em;
+			position: absolute;
+		}
+		img.google{
+			height: 4.5em;
+  			width:  4.5em;
+  			top: 5em;
+  			left: 36em;
+  			position: absolute;
+		}
+		.caption4{
+			color:yellow;
+			top: 9.3em;
+			left: 36.7em;
+			position: absolute;
+		}
+		img.pirate{
+			height: 4.5em;
+  			width:  4.5em;
+  			top: 5em;
+  			left: 47em;
+  			position: absolute;
+		}
+		.caption5{
+			color:yellow;
+			top: 9.3em;
+			left: 47.7em;
+			position: absolute;
+		}
+		img.games{
+			height: 4.5em;
+  			width:  4.5em;
+  			top: 5em;
+  			left: 58em;
+  			position: absolute;
+		}
+		.caption6{
+			color:yellow;
+			top: 9.3em;
+			left: 58.7em;
+			position: absolute;
+		}
+		img.git {
+			height: 4.5em;
+  			width:  4.5em;
+  			top: 12em;
+  			left: 3em;
+  			position: absolute;
+		}
+		.caption7{
+			color: yellow;
+			top: 16.4em ;
+			left: 3.8em;
+			position: absolute;
+			size: 50px;
+		}
+		img.art {
+			height: 4.5em;
+  			width:  4.5em;
+  			top: 19em;
+  			left: 3em;
+  			position: absolute;
+		}
+		.caption8{
+			color: yellow;
+			top: 23.4em ;
+			left: 3.2em;
+			position: absolute;
+			size: 50px;
+		}
+		img.hack {
+			height: 4.5em;
+  			width:  4.5em;
+  			top: 12em;
+  			left: 58em;
+  			position: absolute;
+		}
+		.caption9{
+			color: yellow;
+			top: 16.4em ;
+			left: 58.3em;
+			position: absolute;
+			
+		}
+		img.song{
+			height: 4.5em;
+  			width:  4.5em;
+  			top: 19em;
+  			left: 58em;
+  			position: absolute;
+		}
+		.caption10{ 
+			color: yellow;
+			top: 23.4em ;
+			left: 58.4em;
+			position: absolute;
+			size: 50px;
+		}
+</style>
+<!-- Javascript-->
+<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  document.getElementById('txt').style.color ="red";
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+</head>
+<body onload="startTime()">
+<div class="panel">
+	<div class="panel-heading">
+<h2 class="test"><center>Welcome Aggelos, The Time is: <span id="txt"></span>
+</center></h2>
+	</div>
+	<div class="icons">
+		<figure>
+		<a href="https://facebook.com">
+	<img src="icons/Facebook.png" class="fb">
+	<figcaption class="caption">Facebook</figcaption>
+	<figure>
+		<a href="https://www.youtube.com/">
+			<img src="icons/youtube.png" class="youtube">
+		<figcaption class="caption2">Youtube</figcaption>
+	</figure>
+	<figure>
+		<a href="https://netflix.com">
+			<img src="icons/netflix.jpg" class="netflix">
+			<figcaption class="caption3">Netflix</figcaption>
+	</figure>
+	<figure>
+		<a href="https://google.com">
+			<img src="icons/google.jpg" class="google">
+			<figcaption class="caption4">Google</figcaption>
+	</figure>
+	<figure>
+		<a href="https://thepiratebay.org/">
+			<img src="icons/pirate.jpg" class="pirate">
+			<figcaption class="caption5">Torrents</figcaption>
+	</figure>
+	<figure>
+		<a href="games.html">
+			<img src="icons/games.jpg" class="games">
+			<figcaption class="caption6">Games</figcaption>
+	</figure>
+	<figure>
+		<a href="https://github.com">
+			<img src="icons/Github.png" class="git">
+			<figcaption class="caption7">Github</figcaption>
+
+	</figure>
+	<figure>
+		<a href="https://artstation.com">
+			<img src="icons/Artstation.png"class="art">
+			<figcaption class="caption8">Artstation</figcaption>
+	</figure>
+	<figure>
+		<a href="https://hackaday.com">
+			<img src="icons/hack.png" class="hack">
+			<figcaption class="caption9">Hackaday</figcaption>
+	</figure>
+	<figure>
+		<a href="https://songsterr.com" >
+			<img src="icons/song.jpg" class="song">
+			<figcaption class="caption10">Songsterr</figcaption>
+	</figure>
+	</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<Br />
+<div class="weather">
+	<a class="weatherwidget-io" href="https://forecast7.com/en/40d6422d94/thessaloniki/" data-label_1="THESSALONIKI" data-label_2="WEATHER" data-font="Ubuntu" data-icons="Climacons Animated" data-theme="weather_one" >THESSALONIKI WEATHER</a>
+
+</div>
+</body>
+</html>
