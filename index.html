@@ -171,6 +171,21 @@
 			position: absolute;
 			size: 50px;
 		}
+	.container {
+ 			width: 66em;
+  			height: 3.5em;
+  			background: #1f567c;
+  			display: flex;
+  			align-items: center;
+  			justify-content: center;
+  			flex-direction: column;
+ 			position: absolute;
+  			bottom: 2em;
+  			left: 0em;
+		}
+	.widget {
+  			width: 100%;
+		}
 </style>
 <!-- Javascript-->
 <script>
@@ -251,32 +266,9 @@ function checkTime(i) {
 			<figcaption class="caption10">Songsterr</figcaption>
 	</figure>
 	</div>
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<Br />
-<div class="weather">
-	<a class="weatherwidget-io" href="https://forecast7.com/en/40d6422d94/thessaloniki/" data-label_1="THESSALONIKI" data-label_2="WEATHER" data-font="Ubuntu" data-icons="Climacons Animated" data-theme="weather_one" >THESSALONIKI WEATHER</a>
-
+<div class="container">
+	  <div class="widget">
+<a class="weatherwidget-io" href="https://forecast7.com/en/40d6422d94/thessaloniki/" data-label_1="THESSALONIKI" data-label_2="WEATHER" data-font="Ubuntu" data-icons="Climacons Animated" data-theme="weather_one" >THESSALONIKI WEATHER</a> 
 </div>
 </body>
 </html>
